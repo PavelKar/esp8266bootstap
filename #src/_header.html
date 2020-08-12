@@ -1,24 +1,7 @@
-ul#tab.nav.nav-tabs
-  li.active
-    a(href="#tab_mesures" data-toggle="tab") Mesures
-  li
-    a(href="#tab_graphs" data-toggle="tab") Graphiques
-  li
-    a(href="#tab_gpio" data-toggle="tab") GPIO  
-  li
-   a(href="#tab_configuration" data-toggle="tab") Configuration
-
-div.tab-content
-  div#tab_mesures.tab-pane
-    h1 Measures Tab
-  div#tab_graphs
-    h1 Charts Tab
-div#tab_mesures.tab-pane.fade.in.active
-
-table(id='tab_mesures' data-toggle='table' data-show-colunns='true')
-  thead
-    tr
-      th(data-field='mesure' data-align='left' data-sortable='true' data-formatter='labelFormatter') Mesure
-      th(data-field='valeur' data-align='left' data-sortable='true' data-formatter='valueFormatter') Valeur
-      th(data-field='precedente' data-align='left' data-sortable='true' data-formatter='vpFormatter') Valeur Pr&eacute;c&eacute;dente
-
+<h1>Информер Wi-Fi</h1>
+<ul class="nav nav-tabs" id="tab">
+  <li class="active"><a href="#tab_mesures" data-toggle="tab">Измерения</a></li>
+  <li><a href="#tab_graphs" data-toggle="tab">Графика</a></li>
+  <li><a href="#tab_gpio" data-toggle="tab">GPIO  </a></li>
+  <li><a href="#tab_configuration" data-toggle="tab">Конфигурация</a></li>
+</ul>
