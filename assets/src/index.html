@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+ <div class="container-fluid">
+   //= template/navmenu.html
+       <div class="tab-content">
+        <div class="tab ">
+          <h2>Настройки WI-FI</h2>
+        </div>
+        <div class="alert alert-dismissible alert-success">
+          Доступ в интернет требуется для обновления времени, получения данных о погоде, отправки и получения данных с погодных датчиков в облака данных.
+        </div>
+          
+        <form>
+          
+          <legend>Подключение к локальной WiFi сети</legend>
+          <div class="form-group">
+            <label class="col-form-label" for="AP_name">Название WiFi сети</label>
+            <input type="text" class="form-control" placeholder="Имя точки доступа" id="AP_name">
+          </div>
+          <div class="form-group">
+            <label for="AP_password">Пароль</label>
+            <input type="password" class="form-control" id="AP_password" placeholder="Введите пароль">
+          </div>
+          <legend>Подключение к часам (192.168.4.1)</legend>
+          <div class="form-group">
+            <label class="col-form-label" for="CLOCK_name">Название WiFi сети</label>
+            <input type="text" class="form-control" placeholder="Имя точки доступа" id="CLOCK_name">
+          </div>
+          <div class="form-group">
+            <label for="CLOCK_password">Пароль</label>
+            <input type="password" class="form-control" id="CLOCK_password" placeholder="Введите пароль">
+          </div>
+          <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+       
+            </form>
+      </div>
+    
+
+//= template/footer.html
+</body>
+</html>
